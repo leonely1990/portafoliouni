@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-color: #042058;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.pagina {
+    display: flex;
+    flex-flow: column nowrap;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    height: 100vh;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #04205843;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 15px;
+    overflow: auto;
+}
+
+footer {
+    padding: 10px;
+    border-top: 1px solid #04205843;
+}
+
+.imagen-portada {
+    display: flex;
+    flex-flow: nowrap column;
+    overflow: hidden;
+    width: 45%;
+    height: 45%;
+    border-radius: 15px;
+}
+
+.titulo-portada {
+    margin: auto;
+}
+
+.datos-portada {
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: #04205843;
+}
+
+.imagen-autor {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    border-radius: 70%;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #6f6f6f93;
+}
+
+.autor {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.contenido-autor {
+    padding: 10px;
+    width: 70%;
+}
+
+
+p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contenido-autor article h3 {
+    margin-bottom: 15px;
+    color: #042058;
+    border-left: 5px solid #042058;
+    padding-left: 10px;
+}
+
+.datos-portada {
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.datos-portada:hover {
+    transform: scale(1.02);
+}
+
+
+
+.analisis {
+    padding: 20px 40px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.titulo-seccion {
+    color: #042058;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.tabla-apa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.tabla-apa th {
+    border-top: 2px solid #042058;
+    border-bottom: 1px solid #042058;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-apa td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-apa tr:last-child td {
+    border-bottom: 2px solid #042058;
+}
+
+
+.scroll-interno {
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.detalles-tecnicos h4 {
+    color: #042058;
+    margin: 20px 0 10px 0;
+    border-left: 4px solid #042058;
+    padding-left: 10px;
+}
+
+.detalles-tecnicos p {
+    text-align: justify;
+    font-size: 0.95rem;
+}
+
+
+
+.infografia {
+    background-color: #f4f7f6; 
+}
+
+.titulo-shor {
+    color: #042058;
+    margin-top: 20px;
+}
+
+.subtitulo-shor {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contenedor-imagen-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-imagen-info img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.ensayo-texto {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.ensayo-texto p:first-child {
+    text-indent: 1.27cm;
+}
+
+.ensayo-texto p {
+    margin-bottom: 1.5em;
+}
+
+
+.hardware {
+    padding: 20px 40px;
+}
+
+.galeria-equipos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.foto-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.foto-equipo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Esto hará que tus fotos se vean uniformes */
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #ccc; /* Placeholder mientras pones las fotos */
+}
+
+.foto-equipo span {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #042058;
+}
+
+.recomendaciones-cuidado {
+    background-color: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #042058;
+    margin-top: 20px;
+}
+
+.recomendaciones-cuidado h4 {
+    margin-bottom: 10px;
+    color: #042058;
+}
+
+.recomendaciones-cuidado ul {
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
+
+
+.herramientas {
+    padding: 20px 40px;
+}
+
+.subtitulo-herramientas {
+    color: #042058;
+    margin: 25px 0 15px 0;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #04205843;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.tabla-herramientas td {
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* Estilo para las imágenes y iconos en la tabla */
+.img-herramienta {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+}
+
+.tabla-herramientas i {
+    color: #042058;
+    display: block;
+    text-align: center;
+}
+
+/* Ajuste de ancho de columnas para herramientas */
+.tabla-herramientas th:nth-child(1), 
+.tabla-herramientas td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+.tabla-herramientas th:nth-child(2), 
+.tabla-herramientas td:nth-child(2) {
+    width: 200px;
+    font-weight: bold;
+}
+
+.reflexiones {
+    padding: 20px 50px;
+}
+
+.bloque-reflexion {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8faff;
+    border-radius: 10px;
+    border-left: 6px solid #042058;
+}
+
+.bloque-reflexion h4 {
+    color: #042058;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.bloque-reflexion p {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.conclusion-final {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #042058;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.conclusion-final p {
+    color: white;
+    margin-bottom: 0;
+}
