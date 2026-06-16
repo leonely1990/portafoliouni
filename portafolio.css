@@ -363,3 +363,48 @@ p {
     color: white;
     margin-bottom: 0;
 }
+
+/* ESTILOS CSS PARA LA PÁGINA DE PRÁCTICA */
+/* Añade esto a tu archivo portafolio.css */
+
+.main.practica {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.introduccion-practica {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.contenedor-imagen-practica {
+    text-align: center;
+    display: flex;
+    width: 25%;
+    height: 25%;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.contenedor-imagen-practica img {
+    object-fit: cover;
+    width: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#practica-ensamblaje .scroll-interno {
+    max-height: calc(100% - 150px);
+    overflow-y: auto;
+}
+
+.scroll-interno {
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
