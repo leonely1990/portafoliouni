@@ -382,6 +382,7 @@ p {
 .contenedor-imagen-practica {
     text-align: center;
     display: flex;
+    justify-content: center;
     width: 25%;
     height: 25%;
     border: 1px solid black;
@@ -390,8 +391,8 @@ p {
 }
 
 .contenedor-imagen-practica img {
-    object-fit: cover;
-    width: fit-content;
+    object-fit: fill;
+    width: auto;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
