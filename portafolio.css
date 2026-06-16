@@ -371,6 +371,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    text-align: center;
 }
 
 .introduccion-practica {
@@ -384,15 +385,13 @@ p {
     display: flex;
     justify-content: center;
     width: 25%;
-    height: 25%;
-    border: 1px solid black;
+    height: 40%;
     margin: 5px;
     border-radius: 10px;
 }
 
 .contenedor-imagen-practica img {
-    object-fit: fill;
-    width: auto;
+    width: 450px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -404,8 +403,12 @@ p {
 }
 
 .scroll-interno {
-    border: 1px solid black;
+    margin-top: 15px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.audios {
+    margin-top: 10px;
 }
